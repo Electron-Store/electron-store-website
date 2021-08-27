@@ -10,14 +10,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="icon" href="https://raw.githubusercontent.com/Patrick-web/electron-app-store/main/icons/64x64.png" type="image/png">
+    <link rel="icon" href="https://raw.githubusercontent.com/Electron-Store/electron-app-store/main/icons/64x64.png" type="image/png">
 </head>
 
 <body>
     <header class="text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <img src="https://raw.githubusercontent.com/Patrick-web/electron-app-store/main/icons/64x64.png" class="w-13 h-12 text-white p-2 rounded-full" />
+                <img src="https://raw.githubusercontent.com/Electron-Store/electron-app-store/main/icons/64x64.png" class="w-13 h-12 text-white p-2 rounded-full" />
                 <span class="ml-3 text-xl">Electron App Store</span>
             </a>
             <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
@@ -25,7 +25,7 @@
                 <a class="mr-5 hover:text-gray-900" href="#install">Installation</a>
                 <a class="mr-5 hover:text-gray-900" href="#about">About</a>
             </nav>
-            <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" onclick="window.location.href = 'https:/\/github.com/Patrick-web/electron-app-store'">GitHub
+            <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" onclick="window.location.href = 'https:/\/github.com/Electron-Store/electron-app-store'">GitHub
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -114,7 +114,7 @@
     <section class="text-gray-600 body-font" id="about">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                <img class="object-cover object-center rounded" alt="hero" src="https://raw.githubusercontent.com/Patrick-web/electron-app-store/main/screenshots/Explore.png">
+                <img class="object-cover object-center rounded" alt="hero" src="https://raw.githubusercontent.com/Electron-Store/electron-app-store/main/screenshots/Explore.png">
             </div>
             <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                 <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Electron App Store
@@ -129,12 +129,12 @@
     <footer class="text-gray-600 body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <img src="https://raw.githubusercontent.com/Patrick-web/electron-app-store/main/icons/64x64.png" class="w-13 h-12 text-white p-2 rounded-full" />
+                <img src="https://raw.githubusercontent.com/Electron-Store/electron-app-store/main/icons/64x64.png" class="w-13 h-12 text-white p-2 rounded-full" />
                 <span class="ml-3 text-xl">Electron App Store</span>
             </a>
             <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
                 <span id="cpr"></span> Electron App Store —
-                <a href="https://github.com/Patrick-web/electron-app-store" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">GitHub</a>
+                <a href="https://github.com/Electron-Store/electron-app-store" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">GitHub</a>
             </p>
         </div>
     </footer>
@@ -167,18 +167,18 @@
         os.innerHTML = osName
 
         $.get(
-            "https://api.github.com/repos/Patrick-web/electron-app-store/tags",
+            "https://api.github.com/repos/Electron-Store/electron-app-store/tags",
             function(data) {
                 $('#tag').text(data[0].name)
-                $('#win').attr("href", `https://github.com/Patrick-web/electron-app-store/releases/download/${data[0].name}/Electron-Store-${data[0].name.replace('v', '')}.exe`)
-                $('#linux').attr("href", `https://github.com/Patrick-web/electron-app-store/releases/download/${data[0].name}/Electron-Store-${data[0].name.replace('v', '')}.appimage`)
-                $('#mac').attr("href", `https://github.com/Patrick-web/electron-app-store/releases/download/${data[0].name}/Electron-Store-${data[0].name.replace('v', '')}.dmg`)
+                $('#win').attr("href", `https://github.com/Electron-Store/electron-app-store/releases/download/${data[0].name}/Electron-Store-${data[0].name.replace('v', '')}.exe`)
+                $('#linux').attr("href", `https://github.com/Electron-Store/electron-app-store/releases/download/${data[0].name}/Electron-Store-${data[0].name.replace('v', '')}.appimage`)
+                $('#mac').attr("href", `https://github.com/Electron-Store/electron-app-store/releases/download/${data[0].name}/Electron-Store-${data[0].name.replace('v', '')}.dmg`)
                 if (platformCorrected == "Linux") {
-                    $('#msg').html(`<button class="dl-btn transition duration-500 border-0 text-lg h-12 w-36 bg-red-500 hover:bg-red-700 text-white mt-2 px-3 rounded-md" onclick="window.location.href = 'https://github.com/Patrick-web/electron-app-store/releases/download/${data[0].name}/Electron-Store-${data[0].name.replace('v', '')}.appimage'"> <span>Download for Linux</span> <i class='bx bx-down-arrow-alt animate-bounce text-xl'></i></button>`)
+                    $('#msg').html(`<button class="dl-btn transition duration-500 border-0 text-lg h-12 w-36 bg-red-500 hover:bg-red-700 text-white mt-2 px-3 rounded-md" onclick="window.location.href = 'https://github.com/Electron-Store/electron-app-store/releases/download/${data[0].name}/Electron-Store-${data[0].name.replace('v', '')}.appimage'"> <span>Download for Linux</span> <i class='bx bx-down-arrow-alt animate-bounce text-xl'></i></button>`)
                 } else if (platformCorrected == "Windows") {
-                    $('#msg').html(`<button class="dl-btn transition duration-500 border-0 text-lg h-12 w-36 bg-red-500 hover:bg-red-700 text-white mt-2 px-3 rounded-md" onclick="window.location.href = 'https://github.com/Patrick-web/electron-app-store/releases/download/${data[0].name}/Electron-Store-${data[0].name.replace('v', '')}.exe'"> <span>Download for Windows</span> <i class='bx bx-down-arrow-alt animate-bounce text-xl'></i></button>`)
+                    $('#msg').html(`<button class="dl-btn transition duration-500 border-0 text-lg h-12 w-36 bg-red-500 hover:bg-red-700 text-white mt-2 px-3 rounded-md" onclick="window.location.href = 'https://github.com/Electron-Store/electron-app-store/releases/download/${data[0].name}/Electron-Store-${data[0].name.replace('v', '')}.exe'"> <span>Download for Windows</span> <i class='bx bx-down-arrow-alt animate-bounce text-xl'></i></button>`)
                 } else if (platformCorrected == "macOS") {
-                    $('#msg').html(`<button class="dl-btn transition duration-500 border-0 text-lg h-12 w-36 bg-red-500 hover:bg-red-700 text-white mt-2 px-3 rounded-md" onclick="window.location.href = 'https://github.com/Patrick-web/electron-app-store/releases/download/${data[0].name}/Electron-Store-${data[0].name.replace('v', '')}.dmg'"> <span>Download for macOS</span> <i class='bx bx-down-arrow-alt animate-bounce text-xl'></i></button>`)
+                    $('#msg').html(`<button class="dl-btn transition duration-500 border-0 text-lg h-12 w-36 bg-red-500 hover:bg-red-700 text-white mt-2 px-3 rounded-md" onclick="window.location.href = 'https://github.com/Electron-Store/electron-app-store/releases/download/${data[0].name}/Electron-Store-${data[0].name.replace('v', '')}.dmg'"> <span>Download for macOS</span> <i class='bx bx-down-arrow-alt animate-bounce text-xl'></i></button>`)
                 } else {
                     $('#msg').text("Sorry, your Platform is not supported!")
                 }
